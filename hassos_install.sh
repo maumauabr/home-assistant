@@ -92,7 +92,7 @@ for release in r:
     if release["prerelease"]:
         continue
     for asset in release["assets"]:
-        if asset["name"].find("$RELEASE_TYPE") != -1:
+        if asset["name"].find('haos_ova-13.1.vmdk') != -1:
             image_url = asset["browser_download_url"]
             print(image_url)
             exit()
